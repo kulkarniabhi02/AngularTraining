@@ -1,1 +1,9 @@
-<p class="success">success works!</p>
+<p class="success">{{successMessage}}</p>
+
+<span style="color: #000;">{{ showButtonClickedMessage }}</span>
+
+<input type="text" class="form-control" (input)="onUpdateInputEvent($event)" />
+<span style="color: #000;">{{ showInputValue }}</span>
+
+<button class="btn btn-primary" [disabled]="!enableClickMe"
+    (click)="onBtnClick()">Click me...</button>

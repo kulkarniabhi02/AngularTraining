@@ -7,9 +7,15 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ErrorComponent implements OnInit {
 
-  constructor() { }
+  errorMessage = 'Error works...!!!';
+  constructor() {
+  }
 
   ngOnInit(): void {
+  }
+
+  getErrorMessage(): string {
+    return this.errorMessage;
   }
 
 }
