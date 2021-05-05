@@ -6,13 +6,15 @@ import { AppComponent } from './app.component';
 import { SuccessComponent } from './success/success.component';
 import { ErrorComponent } from './error/error.component';
 import { ServerComponent } from './server/server.component';
+import { PractisethreeComponent } from './practisethree/practisethree.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     SuccessComponent,
     ErrorComponent,
-    ServerComponent
+    ServerComponent,
+    PractisethreeComponent
   ],
   imports: [
     BrowserModule,

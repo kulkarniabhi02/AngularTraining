@@ -1,0 +1,9 @@
+<p *ngIf="!isToggleParagraph">practisethree works!</p>
+
+<div *ngFor="let arrTrackClickItem of arrTrackClick"
+    [ngStyle]="arrTrackClickItem > 4 ? {'background-color': 'blue'} : ''"
+    [ngClass]="{'white-color': arrTrackClickItem > 4}">
+    {{arrTrackClickItem}}
+</div>
+
+<button (click)="onTogglePragraph()">Display Details</button>
